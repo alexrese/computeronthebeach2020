@@ -1,0 +1,27 @@
+- path
+
+- 
+  let pages = [
+    {name: 'Home', link: '/'},
+    {name: 'Hospedagem', link: '/accommodation'},
+  ]
+
+nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
+  a.navbar-brand(href="#") Navbar
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  
+  div#navbarSupportedContent(class="collapse navbar-collapse") 
+    ul(class="navbar-nav mr-auto")
+      each item in pages
+        li(class=path===item.link ? "nav-item active" : "nav-item")
+          a.nav-link(href=item.link)= item.name 
+        //- li(class="nav-item dropdown")
+        //-   a(class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+        //-   Dropdown        
+        //-   div.dropdown-menu(aria-labelledby="navbarDropdown")
+        //-   a.dropdown-item(href="#") Action
+        //-   a.dropdown-item(href="#") Another action
+        //-   div.dropdown-divider
+        //-   a.dropdown-item(href="#") Something else here
+        

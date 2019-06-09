@@ -1,0 +1,6 @@
+npm install -g express-generator
+express --css=sass --view=pug
+npm install
+set DEBUG=computeronthebeach2020:* & npm start
+npm install -g nodemon
+set DEBUG=computeronthebeach2020:* & nodemon ./bin/www
